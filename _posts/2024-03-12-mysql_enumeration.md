@@ -1,10 +1,10 @@
 ---
 title: MySql Enumeration
 date: 2024-03-13 08:25:41 AM
-categories: [RedTeam, Guide, Services Enumeration]
-tags: [redteam, enumeration, mysql]     # TAG names should always be lowercase
+categories: [RedTeam, Enumeration]
+tags: [redteam]     # TAG names should always be lowercase
 authors: [0]
-img_path: assets/img/services_enumerations/mysql/
+img_path: ../../assets/img/services_enumerations/mysql/
 ---
 
 ## SQL 

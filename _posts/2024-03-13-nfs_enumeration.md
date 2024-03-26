@@ -1,10 +1,10 @@
 ---
 title: NFS Enumeration
 date: 2024-03-13 08:25:41 AM
-categories: [RedTeam, Guide, Services Enumeration]
-tags: [redteam, enumeration, nfs]     # TAG names should always be lowercase
+categories: [RedTeam, Enumeration]
+tags: [redteam]     # TAG names should always be lowercase
 authors: [0]
-img_path: assets/img/services_enumerations/nfs/
+img_path: ../../assets/img/services_enumerations/nfs/
 ---
 
 ## NFS 

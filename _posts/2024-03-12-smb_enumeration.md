@@ -1,10 +1,10 @@
 ---
 title: SMB Enumeration
 date: 2024-03-12 08:25:41 PM
-categories: [RedTeam, Guide, Services Enumeration]
-tags: [redteam, enumeration, smb]     # TAG names should always be lowercase
+categories: [RedTeam, Enumeration]
+tags: [redteam]     # TAG names should always be lowercase
 authors: [0]
-img_path: assets/img/services_enumerations/smb/
+img_path: ../../assets/img/services_enumerations/smb/
 ---
 
 

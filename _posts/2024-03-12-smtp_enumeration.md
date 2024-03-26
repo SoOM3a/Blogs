@@ -1,10 +1,10 @@
 ---
 title: SMTP Enumeration
 date: 2024-03-12 10:25:41 PM
-categories: [RedTeam, Guide, Services Enumeration]
-tags: [redteam, enumeration, smtp]     # TAG names should always be lowercase
+categories: [RedTeam, Enumeration]
+tags: [redteam]     # TAG names should always be lowercase
 authors: [0]
-img_path: assets/img/services_enumerations/smtp/
+img_path: ../../assets/img/services_enumerations/smtp/
 ---
 
 ## SMTP 
