@@ -1,10 +1,10 @@
 ---
-title**: Windows Core Process
-date**: 2024-03-19 08:25:41 AM
-categories**: [Blue Team]
-tags**: [blueteam]     # TAG names should always be lowercase
-img_path**: /assets/img/blueteam/windows_core_process
-authors**: [0]
+title: Windows Core Process
+date: 2024-03-19 08:25:41 AM
+categories: [Blue Team]
+tags: [blueteam] 
+img_path: /assets/img/blueteam/windows_core_process
+authors: [0]
 ---
 
 ## Windows Core Process
@@ -38,6 +38,7 @@ In addition, system threads don't have a user process address space and hence mu
 - A different PID. (Remember that the PID will always be PID 4)
 - Not running in Session 0
 {: .prompt-info }
+
 ### smss.exe
 > The Session Manager process is responsible for creating new
 sessions. The fi rst instance creates a child instance for each new session.
