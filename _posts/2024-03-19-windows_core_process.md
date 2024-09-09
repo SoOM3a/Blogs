@@ -3,7 +3,7 @@ title: Windows Core Process
 date: 2024-03-19 08:25:41 AM
 categories: [Blue Team]
 tags: [blueteam] 
-img_path: /assets/img/blueteam/windows_core_process
+media_subpath: /assets/img/blueteam/windows_core_process
 authors: [0]
 ---
 
@@ -32,7 +32,7 @@ The System process (process ID 4) is the home for a special kind of thread that 
 System threads have all the attributes and contexts of regular user-mode threads (such as a hardware context, priority, and so on) but are different in that they run only in kernel-mode executing code loaded in system space, whether that is in Ntoskrnl.exe or in any other loaded device driver.
 In addition, system threads don't have a user process address space and hence must allocate any dynamic storage from operating system memory heaps, such as a paged or nonpaged pool.
 
->What is unusual behaviour for this process?
+> What is unusual behaviour for this process?
 - A parent process (aside from System Idle Process (0))
 - Multiple instances of System. (Should only be one instance) 
 - A different PID. (Remember that the PID will always be PID 4)

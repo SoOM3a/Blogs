@@ -4,7 +4,7 @@ date: 2024-03-12 10:25:41 PM
 categories: [RedTeam, Enumeration]
 tags: [redteam]     # TAG names should always be lowercase
 authors: [0]
-img_path: /assets/img/services_enumerations/smtp/
+media_subpath: /assets/img/services_enumerations/smtp/
 ---
 
 ## SMTP 
