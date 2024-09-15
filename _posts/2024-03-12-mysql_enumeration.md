@@ -27,3 +27,20 @@ MySQL is likely not going to be the first point of call when getting initial inf
 | mysql_sql| module performs SQL queries on a remote server when provided with a valid set of credentials.|
 | mysql_enum| module will connect to a remote MySQL database server with a given set of credentials and perform some basic enumeration on it.|
 | mysql_schemadump| module extracts the schema information from a MySQL DB server.|
+
+<script src="https://giscus.app/client.js"
+        data-repo="SoOM3a/Blogs"
+        data-repo-id="R_kgDOLebVZA"
+        data-category="General"
+        data-category-id="DIC_kwDOLebVZM4Cd9IX"
+        data-mapping="url"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>

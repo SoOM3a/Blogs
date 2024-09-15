@@ -153,3 +153,20 @@ An often neglected stage of the threat intelligence lifecycle is the Feedback st
 The Feedback stage is crucial if you want to see your CTI work continuously improve and add value to your organization. You need to know if your CTI efforts are making a difference to your organization at the operational or strategic level and, if not, how to adjust things to ensure they do.  
 
 Too often, CTI teams will blindly share intelligence with people in their organization and never stop to consider if what they are sharing adds value. You need a two-way communication channel between the CTI team and key stakeholders. The stakeholders need to provide feedback on the effectiveness of the intelligence being shared with them, how they use it, and if any improvements can be made to aid them in making informed decisions.
+
+<script src="https://giscus.app/client.js"
+        data-repo="SoOM3a/Blogs"
+        data-repo-id="R_kgDOLebVZA"
+        data-category="General"
+        data-category-id="DIC_kwDOLebVZM4Cd9IX"
+        data-mapping="url"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>

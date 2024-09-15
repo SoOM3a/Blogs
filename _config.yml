@@ -99,7 +99,7 @@ comments:
     repo: SoOM3a/Blog" # <gh-username>/<repo>
     repo_id: R_kgDOLebVZA
     category: General
-    category_id: DIC_kwDOLebVZM4Cd9IW
+    category_id: DIC_kwDOLebVZM4Cd9IX
     mapping: url # optional, default to 'pathname'
     input_position: top # optional, default to 'bottom'
     lang: en # optional, default to the value of `site.lang`

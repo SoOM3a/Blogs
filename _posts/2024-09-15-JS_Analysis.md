@@ -2,7 +2,7 @@
 title: JS Analysis
 date: 2024-09-15 08:25:41 AM
 categories: [Malware Analysis]
-tags: [ThreatIntelligence,MalwareAnalysis101] 
+tags: [MalwareAnalysis101] 
 render_with_liquid: false
 media_subpath: /assets/img/MalwareAnalysis/MalwareAnalysis101
 authors: [0]
@@ -95,3 +95,20 @@ cscript loveyou.js
  AMSIScriptContentRetrieval > events.txt
 ```
 ![deobfuscation with AMSI windows Driver](deobfuscation_AMSI.png)
+
+<script src="https://giscus.app/client.js"
+        data-repo="SoOM3a/Blogs"
+        data-repo-id="R_kgDOLebVZA"
+        data-category="General"
+        data-category-id="DIC_kwDOLebVZM4Cd9IX"
+        data-mapping="url"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>

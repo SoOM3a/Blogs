@@ -29,3 +29,20 @@ We can map the journey of an email from your computer to the recipient’s like 
 ## Enumeration 
 [Hydra](../hydra/)
  
+
+<script src="https://giscus.app/client.js"
+        data-repo="SoOM3a/Blogs"
+        data-repo-id="R_kgDOLebVZA"
+        data-category="General"
+        data-category-id="DIC_kwDOLebVZM4Cd9IX"
+        data-mapping="url"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
