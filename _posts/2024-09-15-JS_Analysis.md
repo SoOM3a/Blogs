@@ -96,6 +96,9 @@ cscript loveyou.js
 ```
 ![deobfuscation with AMSI windows Driver](deobfuscation_AMSI.png)
 
+> If the malware using evasion techniques such as .callee.toString() to check that the orignal function eval/location did not be overwirtten. you can use js box for invistgation such as [box-js](https://github.com/CapacitorSet/box-js)
+{: .prompt-tip }
+
 <script src="https://giscus.app/client.js"
         data-repo="SoOM3a/Blogs"
         data-repo-id="R_kgDOLebVZA"
