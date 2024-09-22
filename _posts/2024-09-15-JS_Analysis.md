@@ -73,7 +73,7 @@ js -f samle.js
 ```shell 
 js -f object.js -f sample.js
 ```
-![SpiderMonkey deobfuscation activeXObject](SpiderMonkey_deobfuscation_activeX.PNG)
+![SpiderMonkey deobfuscation activeXObject](SpiderMonkey_deobfuscation_activeX.png)
 
 #### Windows AMSI Deobfuscation For Windows
 
