@@ -14,7 +14,7 @@ Cyber threat intelligence results from disparate cyber threat data collected, pr
 
 ### CTI Types
 
-Mainly their are 3 levels of threat intelligence, but some organization makes them 4 but you cam comsider technical part of operational threat intelligence (Operational or technical).
+Mainly their are 3 levels of threat intelligence, but some organization makes them 4 but you can consider technical part of operational threat intelligence (Operational or technical).
 ![CTI Types](cti_types_sans.png)
 
 #### Term of usage
