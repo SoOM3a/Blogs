@@ -78,7 +78,7 @@ authors: [0]
  - **Tool Zimmerman**: `visual stuido Code` OR `Any text editor`
  - **description**: process running with command and OS exit codes for the process
  - **Evidence Information(EI)**: 
-  - Full Path of excutable|time of execution
+  - Full Path of excutable & time of execution
   - ProgramId (`0000sha1`)
   - OS process exit codes
 
@@ -132,21 +132,23 @@ authors: [0]
  - **Installed services**: `Commandline/powershell events`
  - **Scheduled Tasks**: `C:\Windows\System32\Tasks`
  - **Autostart**:
-```
-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+```HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
 HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
-HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
-   ```
+HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce```
+
 ## Evidence of Leteral Movment
+
 > most common tools/protocols which we can search for (SMB,RDP, WMI, Psexec)
 {: .prompt-tip }
+
 ### **RDP**: 
  - EventId:
     ```4624 - Type 3 Network
     5140
     5145
     5156```
+    
 ### **SMB**:
  - shellbags:  `HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\BagMRU and Bags`
  - HIPS/IPS/IDS Triggers on SMB port
