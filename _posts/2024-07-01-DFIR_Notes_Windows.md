@@ -1,8 +1,8 @@
 ---
 title: Windows DFIR Notes
-date: 2024-03-19 08:25:41 AM
+date: 2025-01-05 08:25:41 AM
 categories: [Blue Team]
-tags: [blueteam] 
+tags: [blueteam, dfir] 
 media_subpath: /assets/img/blueteam/windows_dfir
 authors: [0]
 ---
@@ -148,7 +148,7 @@ HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce```
     5140
     5145
     5156```
-    
+
 ### **SMB**:
  - shellbags:  `HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\BagMRU and Bags`
  - HIPS/IPS/IDS Triggers on SMB port
