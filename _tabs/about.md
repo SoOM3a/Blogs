@@ -6,7 +6,7 @@ order: 4
 ![personal photo](/assets/img/avatar/personal.jpeg){: w="100" h="100" .left .light }
 ![personal photo](/assets/img/avatar/avatar.png){: w="100" h="100" .left .dark }
 <br> 
-Security Engineer with 5+ years' experience in pre-sales, post-sales, threat analysis, and network signature rules. Proven track record in managing large-scale projects from both pre/post-sales and R&D perspectives.
+Senior cyber security engineer with 7+ years experience in multiple security domains suach as technical-sales, DFIR, threat detection and response, threat analysis, and network signature rules with snort/suricata and DSM for TrendMicro. Proven track record in managing large-scale projects from both pre/post-sales and R&D perspectives with milions dollars deals.
 <br> 
 
 <h2> Online Web-Sites Statistics </h2>
@@ -15,6 +15,18 @@ Security Engineer with 5+ years' experience in pre-sales, post-sales, threat ana
 
 <h2>Blogs and Acknowledgments</h2>
 <ol style="font-family: Arial, sans-serif; padding-left: 20px;">
+    <li style="margin-bottom: 10px;">
+        <a href="https://www.trendmicro.com/en_us/research/25/d/incomplete-nvidia-patch.html" 
+           style="text-decoration: none; color: #2C3E50; font-weight: bold; font-size: 18px;">
+           Incomplete NVIDIA Patch to CVE-2024-0132 Exposes AI Infrastructure and Data to Critical Risks
+        </a>
+    </li>
+        <li style="margin-bottom: 10px;">
+        <a href="https://www.zerodayinitiative.com/blog/2025/1/8/zdi-threat-hunting-2024-highlights-trends-amp-challenges" 
+           style="text-decoration: none; color: #2C3E50; font-weight: bold; font-size: 18px;">
+           ZDI Acknowledgment: ZDI Threat Hunting 2024: Highlights, Trends, & Challenges
+        </a>
+    </li>
     <li style="margin-bottom: 10px;">
         <a href="https://www.trendmicro.com/en_us/research/24/h/godzilla-fileless-backdoors.html" 
            style="text-decoration: none; color: #2C3E50; font-weight: bold; font-size: 18px;">
