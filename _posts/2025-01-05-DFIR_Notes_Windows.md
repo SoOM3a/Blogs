@@ -171,23 +171,23 @@ authors: [0]
 
 ## Extra Resources
  - windows registry cheat sheet
-<iframe src="https://docs.google.com/viewer?url=https://github.com/SoOM3a/Blogs/blob/main/assets/pdf/dfir/windows/windows%20registry%20cheat%20sheet.docx&embedded=true" width="600" height="400"></iframe>
+<iframe src="https://docs.google.com/viewer?url=https://soom3a.github.io/Blogs/assets/pdf/dfir/windows/windows_registry_cheat_sheet.pdf&embedded=true" width="600" height="400"></iframe>
 
  - ntfs file record
-<iframe src="https://docs.google.com/viewer?url=https://github.com/SoOM3a/Blogs/blob/main/assets/pdf/dfir/windows/ntfs%20file%20record.docx&embedded=true" width="600" height="400"></iframe>
+<iframe src="https://docs.google.com/viewer?url=https://soom3a.github.io/Blogs/assets/pdf/dfir/windows/ntfs_file_record.pdf&embedded=true" width="600" height="400"></iframe>
  
  - rdp flowchart
-<iframe src="https://docs.google.com/viewer?url=https://github.com/SoOM3a/Blogs/blob/main/assets/pdf/dfir/windows/rdp%20flowchart.docx&embedded=true" width="600" height="400"></iframe>
+<iframe src="https://docs.google.com/viewer?url=https://soom3a.github.io/Blogs/assets/pdf/dfir/windows/rdp_flowchart.pdf&embedded=true" width="600" height="400"></iframe>
  
  - windows browser artifacts cheat sheet
-<iframe src="https://docs.google.com/viewer?url=https://github.com/SoOM3a/Blogs/blob/main/assets/pdf/dfir/windows/windows%20browser%20artifacts%20cheat%20sheet.docx&embedded=true" width="600" height="400"></iframe>
-
+<iframe src="https://docs.google.com/viewer?url=https://soom3a.github.io/Blogs/assets/pdf/dfir/windows/windows_browser_artifacts_cheat_sheet.pdf&embedded=true" width="600" height="400"></iframe>
 
  - windows event log cheat sheet
-<iframe src="https://docs.google.com/viewer?url=https://github.com/SoOM3a/Blogs/blob/main/assets/pdf/dfir/windows/windows%20event%20log%20cheat%20sheet.docx&embedded=true" width="600" height="400"></iframe>
- 
+ <iframe src="https://docs.google.com/viewer?url=https://soom3a.github.io/Blogs/assets/pdf/dfir/windows/windows_event_log_cheat_sheet.pdf&embedded=true" width="600" height="400"></iframe>
+
  - windows process genealogy v2
-<iframe src="https://docs.google.com/viewer?url=https://github.com/SoOM3a/Blogs/blob/main/assets/pdf/dfir/windows/windows%20process%20genealogy%20v2.docx&embedded=true" width="600" height="400"></iframe>
+<iframe src="https://docs.google.com/viewer?url=https://soom3a.github.io/Blogs/assets/pdf/dfir/windows/windows_process_genealogy_v2.pdf&embedded=true" width="600" height="400"></iframe>
+
 
 
 <script src="https://giscus.app/client.js"
