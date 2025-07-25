@@ -3,7 +3,7 @@ title: Windows DFIR Notes
 date: 2025-01-05 08:25:41 AM
 categories: [Blue Team]
 tags: [blueteam, dfir] 
-media_subpath: /assets/img/blueteam/windows_dfir
+media_subpath: /assets/pdf/difr/windows
 authors: [0]
 ---
 > Note: any blog with word `Notes`, it designed to help/address commands or steps need in dfir to quick recall things.
@@ -132,10 +132,10 @@ authors: [0]
  - **Installed services**: `Commandline/powershell events`
  - **Scheduled Tasks**: `C:\Windows\System32\Tasks`
  - **Autostart**:
-```HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
-HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
-HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
-HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce```
+   - `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run`
+   - `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce`
+   - `HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run`
+   - `HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce`
 
 ## Evidence of Leteral Movment
 
@@ -168,6 +168,26 @@ HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce```
     - Process Tracking 
     - Config.msi 
     - File OwnerShip
+
+## Extra Resources
+ - windows registry cheat sheet
+<iframe src="https://docs.google.com/viewer?url=https://soom3a.github.io/Blogs/assets/pdf/CV/AbdelrahmanEsmail_8th-Sept2024.pdf&embedded=true" width="600" height="400"></iframe>
+ 
+ - ntfs file record
+<iframe src="https://docs.google.com/viewer?url=https://soom3a.github.io/Blogs/assets/pdf/CV/AbdelrahmanEsmail_8th-Sept2024.pdf&embedded=true" width="600" height="400"></iframe>
+ 
+ - rdp flowchart
+<iframe src="https://docs.google.com/viewer?url=https://soom3a.github.io/Blogs/assets/pdf/CV/AbdelrahmanEsmail_8th-Sept2024.pdf&embedded=true" width="600" height="400"></iframe>
+ 
+ - windows browser artifacts cheat sheet
+<iframe src="https://docs.google.com/viewer?url=https://soom3a.github.io/Blogs/assets/pdf/CV/AbdelrahmanEsmail_8th-Sept2024.pdf&embedded=true" width="600" height="400"></iframe>
+ 
+ - windows event log cheat sheet
+<iframe src="https://docs.google.com/viewer?url=https://soom3a.github.io/Blogs/assets/pdf/CV/AbdelrahmanEsmail_8th-Sept2024.pdf&embedded=true" width="600" height="400"></iframe>
+ 
+ - windows process genealogy v2
+<iframe src="https://docs.google.com/viewer?url=https://soom3a.github.io/Blogs/assets/pdf/CV/AbdelrahmanEsmail_8th-Sept2024.pdf&embedded=true" width="600" height="400"></iframe>
+
 
 <script src="https://giscus.app/client.js"
         data-repo="SoOM3a/Blogs"
