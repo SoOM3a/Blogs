@@ -65,7 +65,7 @@ js -f samle.js
 ```
 ![SpiderMonkey deobfuscation activeXObject issue](SpiderMonkey_deobfuscation_activeXissue.png)
 
-> JS might depend on windows object such as ActiveXobjects yoyu mighjt download [object.js](https://docs.remnux.org/discover-the-tools/dynamically+reverse-engineer+code/scripts) which will help to fix this dependency. 
+> JS might depend on windows object such as ActiveXobjects yoy might download [object.js](https://docs.remnux.org/discover-the-tools/dynamically+reverse-engineer+code/scripts) which will help to fix this dependency. 
 {: .prompt-danger }
 
 - After fownload object.js, we can run spidermonkey with -f argument twoice and see the orignal JS code 

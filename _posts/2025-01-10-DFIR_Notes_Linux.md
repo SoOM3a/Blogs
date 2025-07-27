@@ -3,7 +3,7 @@ title: Linux DFIR Notes
 date: 2025-01-10 08:25:41 pm
 categories: [Blue Team]
 tags: [blueteam, dfir] 
-media_subpath: /assets/img/blueteam/windows_dfir
+media_subpath: /assets/pdf/difr/linux
 authors: [0]
 ---
 > Note: any blog with word `Notes`, it designed to help/address commands or steps need in dfir to quick recall things.
