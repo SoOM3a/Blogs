@@ -11,7 +11,9 @@ Senior cyber security engineer with 7+ years experience in multiple security dom
 
 <h2> Online Web-Sites Statistics </h2>
 <script src="https://tryhackme.com/badge/768291"></script>
-
+<div style="text-align: left;">
+  <img src="https://cyberdefenders-storage.s3.me-central-1.amazonaws.com/profile-badges/SoOM3a.png" width="250" hight="1800" />
+</div>
 
 <h2>Blogs and Acknowledgments</h2>
 <ol style="font-family: Arial, sans-serif; padding-left: 20px;">
