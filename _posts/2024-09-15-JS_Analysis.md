@@ -63,7 +63,7 @@ if we try to deobfuscation js directly, we will find that JS code depends on Act
 ```shell
 js -f samle.js
 ```
-![SpiderMonkey deobfuscation activeXObject issue](SpiderMonkey_deobfuscation_activeXissue.png)
+![SpiderMonkey deobfuscation activeXObject issue](SpiderMonkey_deobfuscation_activeXissu.png)
 
 > JS might depend on windows object such as ActiveXobjects yoy might download [object.js](https://docs.remnux.org/discover-the-tools/dynamically+reverse-engineer+code/scripts) which will help to fix this dependency. 
 {: .prompt-danger }
