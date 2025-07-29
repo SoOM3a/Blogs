@@ -25,9 +25,9 @@ Memory acquisition is the first critical step in memory forensics. Below are som
 
 ### Volatility CheatSheet
 
-### OS Information
+#### OS Information
 
-#### imageinfo
+##### imageinfo
 
 **Volatility 2**:
 ```
@@ -48,9 +48,9 @@ Note: Volatility 3 is significantly faster for all commands.
 
 ---
 
-### Process Information
+#### Process Information
 
-#### pslist
+##### pslist
 
 **Volatility 2**:
 ```
@@ -87,7 +87,7 @@ vol.py -f "/path/to/file" -o "/path/to/dir" windows.dumpfiles --pid <PID>
 - **Volatility 2**: Dumps specified PID or all.
 - **Volatility 3**: Dumps exe and related DLLs.
 
-#### memdump
+##### memdump
 
 **Volatility 2**:
 ```
@@ -99,7 +99,7 @@ vol.py -f "/path/to/file" --profile <profile> memdump -p <PID> --dump-dir="/path
 vol.py -f "/path/to/file" -o "/path/to/dir" windows.memmap --dump --pid <PID>
 ```
 
-#### handles
+##### handles
 
 **Volatility 2**:
 ```
@@ -115,7 +115,7 @@ vol.py -f "/path/to/file" windows.handles --pid <PID>
 - Vol2: Offset, PID, handle, access, type, details
 - Vol3: PID, process, offset, handlevalue, type, access, name
 
-#### dlls
+##### dlls
 
 **Volatility 2**:
 ```
@@ -127,7 +127,7 @@ vol.py -f "/path/to/file" --profile <profile> dlllist -p <PID>
 vol.py -f "/path/to/file" windows.dlllist --pid <PID>
 ```
 
-#### cmdline
+##### cmdline
 
 **Volatility 2**:
 ```
@@ -143,9 +143,9 @@ vol.py -f "/path/to/file" windows.cmdline
 
 ---
 
-### Network Information
+#### Network Information
 
-#### netscan
+##### netscan
 
 **Volatility 2**:
 ```
@@ -169,9 +169,9 @@ vol.py -f "/path/to/file" windows.netstat
 
 ---
 
-### Registry
+#### Registry
 
-#### hivelist
+##### hivelist
 
 **Volatility 2**:
 ```
@@ -185,7 +185,7 @@ vol.py -f "/path/to/file" windows.registry.hivescan
 vol.py -f "/path/to/file" windows.registry.hivelist
 ```
 
-#### printkey
+##### printkey
 
 **Volatility 2**:
 ```
@@ -199,7 +199,7 @@ vol.py -f "/path/to/file" windows.registry.printkey
 vol.py -f "/path/to/file" windows.registry.printkey --key "Software\Microsoft\Windows\CurrentVersion"
 ```
 
-#### hivedump
+##### hivedump
 
 **Volatility 2**:
 ```
@@ -211,9 +211,9 @@ vol.py -f "/path/to/file" --profile hivedump -o <offset>
 
 ---
 
-### Files
+#### Files
 
-#### filescan
+##### filescan
 
 **Volatility 2**:
 ```
@@ -225,7 +225,7 @@ vol.py -f "/path/to/file" --profile <profile> filescan
 vol.py -f "/path/to/file" windows.filescan
 ```
 
-#### filedump
+##### filedump
 
 **Volatility 2**:
 ```
@@ -243,9 +243,9 @@ vol.py -f "/path/to/file" -o "/path/to/dir" windows.dumpfiles --physaddr <offset
 
 ---
 
-### Miscellaneous
+#### Miscellaneous
 
-#### malfind
+##### malfind
 
 **Volatility 2**:
 ```
@@ -257,7 +257,7 @@ vol.py -f "/path/to/file" --profile <profile> malfind
 vol.py -f "/path/to/file" windows.malfind
 ```
 
-#### yarascan
+##### yarascan
 
 **Volatility 2**:
 ```
@@ -271,9 +271,7 @@ vol.py -f "/path/to/file" windows.vadyarascan --yara-file "/path/to/file.yar"
 vol.py -f "/path/to/file" yarascan.yarascan --yara-file "/path/to/file.yar"
 ```
 
----
-
-### Practice
+#### Practice
 
 - **Art of Memory Forensics**: [memoryanalysis.net/amf](https://www.memoryanalysis.net/amf)
 - Practice image: [Download](https://www.sendspace.com/pro/dl/yqjezf)
