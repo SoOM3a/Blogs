@@ -30,14 +30,20 @@ Memory acquisition is the first critical step in memory forensics. Below are som
 ##### imageinfo
 
 **Volatility 2**:
-```
+```bash
+# Windows
 vol.py -f "/path/to/file" imageinfo
 vol.py -f "/path/to/file" kdbgscan
+#Linux 
+vol.py -f "/path/to/file" banner
 ```
 
 **Volatility 3**:
-```
+```bash
+#Windows
 vol.py -f "/path/to/file" windows.info
+#Linux
+vol.py -f "/path/to/file" banner
 ```
 
 **Output differences**:
@@ -47,13 +53,42 @@ vol.py -f "/path/to/file" windows.info
 Note: Volatility 3 is significantly faster for all commands.
 
 ---
+#### Configurating Linux Profile in Ubuntu
+```bash
+# Grap the Linux Kernenl version
+vol3 -f /pat/image.raw banners
+#Update ddebs.list with ddebs repos
+cat <<EOF | sudo tee /etc/apt/sources.list.d/ddebs.list
+deb http://ddebs.ubuntu.com $(lsb_release -cs) main restricted universe multiverse
+deb http://ddebs.ubuntu.com $(lsb_release -cs)-updates main restricted universe multiverse
+deb http://ddebs.ubuntu.com $(lsb_release -cs)-proposed main restricted universe multiverse
+EOF
+
+#Accept the key of ddebs for ubuntu
+curl -fsSL http://ddebs.ubuntu.com/dbgsym-release-key.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/ddebs.gpg > /dev/null
+# Update to make sure ddebs repos working
+sudo apt update
+# install dbgsym-keyring
+sudo apt install ubuntu-dbgsym-keyring
+#linux-image-5.4.0-1059-azure , linux-image-5.4.0-1059-azure-dbgsym
+sudo apt install <linuxImage>-dbgsym
+-----
+# install dwarf2json
+git clone https://github.com/volatilityfoundation/dwarf2json.git
+cd dwarf2json
+sudo apt install golang-go
+go build
+./dwarf2json linux --elf /usr/lib/debug/boot/linux-image-5.4.0-1059-azure > output.json
+Mv output.json volatility3/symbols
+```
+
 
 #### Process Information
 
 ##### pslist
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" --profile <profile> pslist
 vol.py -f "/path/to/file" --profile <profile> psscan
 vol.py -f "/path/to/file" --profile <profile> pstree
@@ -61,7 +96,7 @@ vol.py -f "/path/to/file" --profile <profile> psxview
 ```
 
 **Volatility 3**:
-```
+```bash
 vol.py -f "/path/to/file" windows.pslist
 vol.py -f "/path/to/file" windows.psscan
 vol.py -f "/path/to/file" windows.pstree
@@ -74,12 +109,12 @@ vol.py -f "/path/to/file" windows.pstree
 #### procdump
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" --profile <profile> procdump -p <PID> --dump-dir="/path/to/dir"
 ```
 
 **Volatility 3**:
-```
+```bash
 vol.py -f "/path/to/file" -o "/path/to/dir" windows.dumpfiles --pid <PID>
 ```
 
@@ -90,24 +125,24 @@ vol.py -f "/path/to/file" -o "/path/to/dir" windows.dumpfiles --pid <PID>
 ##### memdump
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" --profile <profile> memdump -p <PID> --dump-dir="/path/to/dir"
 ```
 
 **Volatility 3**:
-```
+```bash
 vol.py -f "/path/to/file" -o "/path/to/dir" windows.memmap --dump --pid <PID>
 ```
 
 ##### handles
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" --profile <profile> handles -p <PID>
 ```
 
 **Volatility 3**:
-```
+```bash
 vol.py -f "/path/to/file" windows.handles --pid <PID>
 ```
 
@@ -118,26 +153,26 @@ vol.py -f "/path/to/file" windows.handles --pid <PID>
 ##### dlls
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" --profile <profile> dlllist -p <PID>
 ```
 
 **Volatility 3**:
-```
+```bash
 vol.py -f "/path/to/file" windows.dlllist --pid <PID>
 ```
 
 ##### cmdline
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" --profile <profile> cmdline
 vol.py -f "/path/to/file" --profile <profile> cmdscan
 vol.py -f "/path/to/file" --profile <profile> consoles
 ```
 
 **Volatility 3**:
-```
+```bash
 vol.py -f "/path/to/file" windows.cmdline
 ```
 
@@ -148,7 +183,7 @@ vol.py -f "/path/to/file" windows.cmdline
 ##### netscan
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" --profile <profile> netscan
 vol.py -f "/path/to/file" --profile <profile> netstat
 
@@ -160,7 +195,7 @@ vol.py -f "/path/to/file" --profile <profile> sockets
 ```
 
 **Volatility 3**:
-```
+```bash
 vol.py -f "/path/to/file" windows.netscan
 vol.py -f "/path/to/file" windows.netstat
 ```
@@ -174,13 +209,13 @@ vol.py -f "/path/to/file" windows.netstat
 ##### hivelist
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" --profile <profile> hivescan
 vol.py -f "/path/to/file" --profile <profile> hivelist
 ```
 
 **Volatility 3**:
-```
+```bash
 vol.py -f "/path/to/file" windows.registry.hivescan
 vol.py -f "/path/to/file" windows.registry.hivelist
 ```
@@ -188,13 +223,13 @@ vol.py -f "/path/to/file" windows.registry.hivelist
 ##### printkey
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" --profile <profile> printkey
 vol.py -f "/path/to/file" --profile <profile> printkey -K "Software\Microsoft\Windows\CurrentVersion"
 ```
 
 **Volatility 3**:
-```
+```bash
 vol.py -f "/path/to/file" windows.registry.printkey
 vol.py -f "/path/to/file" windows.registry.printkey --key "Software\Microsoft\Windows\CurrentVersion"
 ```
@@ -202,7 +237,7 @@ vol.py -f "/path/to/file" windows.registry.printkey --key "Software\Microsoft\Wi
 ##### hivedump
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" --profile hivedump -o <offset>
 ```
 
@@ -216,26 +251,26 @@ vol.py -f "/path/to/file" --profile hivedump -o <offset>
 ##### filescan
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" --profile <profile> filescan
 ```
 
 **Volatility 3**:
-```
+```bash
 vol.py -f "/path/to/file" windows.filescan
 ```
 
 ##### filedump
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" --profile <profile> dumpfiles --dump-dir="/path/to/dir"
 vol.py -f "/path/to/file" --profile <profile> dumpfiles --dump-dir="/path/to/dir" -Q <offset>
 vol.py -f "/path/to/file" --profile <profile> dumpfiles --dump-dir="/path/to/dir" -p <PID>
 ```
 
 **Volatility 3**:
-```
+```bash
 vol.py -f "/path/to/file" -o "/path/to/dir" windows.dumpfiles
 vol.py -f "/path/to/file" -o "/path/to/dir" windows.dumpfiles --virtaddr <offset>
 vol.py -f "/path/to/file" -o "/path/to/dir" windows.dumpfiles --physaddr <offset>
@@ -248,24 +283,24 @@ vol.py -f "/path/to/file" -o "/path/to/dir" windows.dumpfiles --physaddr <offset
 ##### malfind
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" --profile <profile> malfind
 ```
 
 **Volatility 3**:
-```
+```bash
 vol.py -f "/path/to/file" windows.malfind
 ```
 
 ##### yarascan
 
 **Volatility 2**:
-```
+```bash
 vol.py -f "/path/to/file" yarascan -y "/path/to/file.yar"
 ```
 
 **Volatility 3**:
-```
+```bash
 vol.py -f "/path/to/file" windows.vadyarascan --yara-rules <string>
 vol.py -f "/path/to/file" windows.vadyarascan --yara-file "/path/to/file.yar"
 vol.py -f "/path/to/file" yarascan.yarascan --yara-file "/path/to/file.yar"
