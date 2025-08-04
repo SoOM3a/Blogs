@@ -34,15 +34,15 @@ Memory acquisition is the first critical step in memory forensics. Below are som
 # Windows
 vol.py -f "/path/to/file" imageinfo
 vol.py -f "/path/to/file" kdbgscan
-#Linux 
+# Linux 
 vol.py -f "/path/to/file" banner
 ```
 
 **Volatility 3**:
 ```bash
-#Windows
+# Windows
 vol.py -f "/path/to/file" windows.info
-#Linux
+# Linux
 vol.py -f "/path/to/file" banner
 ```
 
@@ -54,17 +54,30 @@ Note: Volatility 3 is significantly faster for all commands.
 
 ---
 #### Configurating Linux Profile in Ubuntu
+
+##### Quick & Easy way
+
+> This way is only supported if the linux varaint is popular 
+```bash 
+python3 vol.py --remote-isf-url 'https://github.com/Abyss-W4tcher/volatility3-symbols/raw/master/banners/banners.json' -f <memory_dump> <pluginName>
+# Example 
+vol3 --remote-isf-url 'https://github.com/Abyss-W4tcher/volatility3-symbols/raw/master/banners/banners.json' -f ubuntu.20211208.mem linux.pstree
+# Note: After first run you can directly run the plugins 
+```
+
+##### Manual Configuration
+
 ```bash
 # Grap the Linux Kernenl version
 vol3 -f /pat/image.raw banners
-#Update ddebs.list with ddebs repos
+# Update ddebs.list with ddebs repos
 cat <<EOF | sudo tee /etc/apt/sources.list.d/ddebs.list
 deb http://ddebs.ubuntu.com $(lsb_release -cs) main restricted universe multiverse
 deb http://ddebs.ubuntu.com $(lsb_release -cs)-updates main restricted universe multiverse
 deb http://ddebs.ubuntu.com $(lsb_release -cs)-proposed main restricted universe multiverse
 EOF
 
-#Accept the key of ddebs for ubuntu
+# Accept the key of ddebs for ubuntu
 curl -fsSL http://ddebs.ubuntu.com/dbgsym-release-key.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/ddebs.gpg > /dev/null
 # Update to make sure ddebs repos working
 sudo apt update
@@ -72,6 +85,11 @@ sudo apt update
 sudo apt install ubuntu-dbgsym-keyring
 #linux-image-5.4.0-1059-azure , linux-image-5.4.0-1059-azure-dbgsym
 sudo apt install <linuxImage>-dbgsym
+# Some time the *-dbgsym package have issues and can not be installed via package manager like apt, so you can install it manually via 
+# https://launchpad.net/~canonical-kernel-team/+archive/ubuntu/ppa/+build/22073719
+# https://launchpad.net/ubuntu/focal/amd64/linux-image-unsigned-5.4.0-1059-azure-dbgsym/5.4.0-1059.62
+# https://launchpad.net/ubuntu/bionic/amd64/linux-image-unsigned-5.4.0-1059-azure-dbgsym
+
 -----
 # install dwarf2json
 git clone https://github.com/volatilityfoundation/dwarf2json.git
@@ -79,7 +97,7 @@ cd dwarf2json
 sudo apt install golang-go
 go build
 ./dwarf2json linux --elf /usr/lib/debug/boot/linux-image-5.4.0-1059-azure > output.json
-Mv output.json volatility3/symbols
+mv output.json volatility3/symbols
 ```
 
 
@@ -358,7 +376,7 @@ vol.py -f "/path/to/file" yarascan.yarascan --yara-file "/path/to/file.yar"
 - `windows.vadyarascan`: Scans Virtual Address Descriptor memory regions.
 
 ---
-## Wingb using Volshell
+## Windgb using Volshell
 
 Volshell is a memory shell debugger-like environment for advanced memory inspection.
 
