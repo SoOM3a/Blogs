@@ -58,6 +58,7 @@ Note: Volatility 3 is significantly faster for all commands.
 ##### Quick & Easy way
 
 > This way is only supported if the linux varaint is popular 
+
 ```bash 
 python3 vol.py --remote-isf-url 'https://github.com/Abyss-W4tcher/volatility3-symbols/raw/master/banners/banners.json' -f <memory_dump> <pluginName>
 # Example 
@@ -357,6 +358,7 @@ vol.py -f "/path/to/file" yarascan.yarascan --yara-file "/path/to/file.yar"
 ## Memory Region Dumping
 
 ### Volatility 2
+
 - `memdump`: Dumps all memory of a process into a single file.
 - `vaddump`: Dumps VAD memory regions into separate files.
 - `memmap`: Maps virtual addresses to physical memory.
