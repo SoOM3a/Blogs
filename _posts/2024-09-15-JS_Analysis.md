@@ -99,6 +99,12 @@ cscript loveyou.js
 > If the malware using evasion techniques such as .callee.toString() to check that the orignal function eval/location did not be overwirtten. you can use js box for invistgation such as [box-js](https://github.com/CapacitorSet/box-js)
 {: .prompt-tip }
 
+
+
+#### Javascript with visualStudio
+- Indivdual components tools (Just in time debugger , MSVC latest X64/86, C++ Cmake)
+- Javascript (ASP.NEt And WebDeveopment)
+
 <script src="https://giscus.app/client.js"
         data-repo="SoOM3a/Blogs"
         data-repo-id="R_kgDOLebVZA"
